@@ -1,100 +1,216 @@
-" Vim color file - dank-neon
+" ==============================================================================
+"   Name:        Dank Neon
+"   Author:      Conlin Durbin <sup@wuz.fyi>
+"   Url:         https://github.com/DankNeon/vim
+"   License:     The MIT License (MIT)
+"
+" ==============================================================================
+
 set background=dark
-if version > 580
-	hi clear
-	if exists("syntax_on")
-		syntax reset
-	endif
-endif
+highlight clear
+syntax reset
 
-set t_Co=256
-let g:colors_name = "dank-neon"
+let g:colors_name="dank-neon"
+let colors_name="dank-neon"
 
-"hi CTagsMember -- no settings --
-"hi CTagsGlobalConstant -- no settings --
-"hi Ignore -- no settings --
-hi Normal guifg=#f0f0f0 guibg=#282a2d guisp=#282a2d gui=bold ctermfg=255 ctermbg=236 cterm=bold
-"hi CTagsImport -- no settings --
-"hi CTagsGlobalVariable -- no settings --
-"hi EnumerationValue -- no settings --
-"hi Union -- no settings --
-"hi Question -- no settings --
-"hi EnumerationName -- no settings --
-"hi DefinedName -- no settings --
-"hi LocalVariable -- no settings --
-"hi CTagsClass -- no settings --
-"hi clear -- no settings --
-hi IncSearch guifg=#66d8ef guibg=#4292ad guisp=#4292ad gui=NONE ctermfg=81 ctermbg=67 cterm=NONE
-hi WildMenu guifg=NONE guibg=#A1A6A8 guisp=#A1A6A8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
-hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
-hi SpecialComment guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Typedef guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
-hi Title guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=bold ctermfg=189 ctermbg=235 cterm=bold
-hi Folded guifg=#192224 guibg=#A1A6A8 guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
-hi PreCondit guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Include guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi TabLineSel guifg=#f0f0f0 guibg=#a36616 guisp=#a36616 gui=bold ctermfg=255 ctermbg=130 cterm=bold
-hi StatusLineNC guifg=#192224 guibg=#6c7179 guisp=#6c7179 gui=bold ctermfg=235 ctermbg=243 cterm=bold
-hi NonText guifg=#5E6C70 guibg=NONE guisp=NONE gui=italic ctermfg=66 ctermbg=NONE cterm=NONE
-hi DiffText guifg=#f0f0f0 guibg=#a11952 guisp=#a11952 gui=NONE ctermfg=255 ctermbg=125 cterm=NONE
-hi ErrorMsg guifg=#f0f0f0 guibg=#a11952 guisp=#a11952 gui=NONE ctermfg=255 ctermbg=125 cterm=NONE
-hi Debug guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi PMenuSbar guifg=#33363a guibg=#33363a guisp=#33363a gui=NONE ctermfg=237 ctermbg=237 cterm=NONE
-hi Identifier guifg=#66d8ef guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-hi SpecialChar guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Conditional guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi StorageClass guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
-hi Todo guifg=#f0f0f0 guibg=#fd951f guisp=#fd951f gui=NONE ctermfg=255 ctermbg=208 cterm=NONE
-hi Special guifg=#f92673 guibg=NONE guisp=NONE gui=NONE ctermfg=197 ctermbg=NONE cterm=NONE
-hi LineNr guifg=#a5adb9 guibg=NONE guisp=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=NONE
-hi StatusLine guifg=#f0f0f0 guibg=#33363a guisp=#33363a gui=bold ctermfg=255 ctermbg=237 cterm=bold
-hi Label guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi PMenuSel guifg=#66d8ef guibg=#6c7179 guisp=#6c7179 gui=NONE ctermfg=81 ctermbg=243 cterm=NONE
-hi Search guifg=#2f94b9 guibg=#4adbff guisp=#4adbff gui=bold,italic,underline ctermfg=31 ctermbg=81 cterm=bold,underline
-hi Delimiter guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Statement guifg=#7057b9 guibg=NONE guisp=NONE gui=bold ctermfg=97 ctermbg=NONE cterm=bold
-hi SpellRare guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi Comment guifg=#a5adb9 guibg=NONE guisp=NONE gui=italic ctermfg=103 ctermbg=NONE cterm=NONE
-hi Character guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Number guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Boolean guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Operator guifg=#fd951f guibg=NONE guisp=NONE gui=bold ctermfg=208 ctermbg=NONE cterm=bold
-hi CursorLine guifg=NONE guibg=#222E30 guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
-hi TabLineFill guifg=#f0f0f0 guibg=#33363a guisp=#33363a gui=bold ctermfg=255 ctermbg=237 cterm=bold
-hi WarningMsg guifg=#A1A6A8 guibg=#a11952 guisp=#a11952 gui=NONE ctermfg=248 ctermbg=125 cterm=NONE
-hi VisualNOS guifg=#192224 guibg=#F9F9FF guisp=#F9F9FF gui=underline ctermfg=235 ctermbg=189 cterm=underline
-hi DiffDelete guifg=NONE guibg=#192224 guisp=#192224 gui=NONE ctermfg=NONE ctermbg=235 cterm=NONE
-hi ModeMsg guifg=#F9F9F9 guibg=#192224 guisp=#192224 gui=bold ctermfg=15 ctermbg=235 cterm=bold
-hi CursorColumn guifg=NONE guibg=#222E30 guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
-hi Define guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Function guifg=#74fa44 guibg=NONE guisp=NONE gui=bold ctermfg=119 ctermbg=NONE cterm=bold
-hi FoldColumn guifg=#192224 guibg=#A1A6A8 guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
-hi PreProc guifg=#f92673 guibg=NONE guisp=NONE gui=NONE ctermfg=197 ctermbg=NONE cterm=NONE
-hi Visual guifg=#192224 guibg=#F9F9FF guisp=#F9F9FF gui=NONE ctermfg=235 ctermbg=189 cterm=NONE
-hi MoreMsg guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi SpellCap guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi VertSplit guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=bold ctermfg=235 ctermbg=66 cterm=bold
-hi Exception guifg=#f92673 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NONE cterm=bold
-hi Keyword guifg=#f92673 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NONE cterm=bold
-hi Type guifg=#a5adb9 guibg=NONE guisp=NONE gui=bold ctermfg=103 ctermbg=NONE cterm=bold
-hi DiffChange guifg=#f0f0f0 guibg=#f92673 guisp=#f92673 gui=NONE ctermfg=255 ctermbg=197 cterm=NONE
-hi Cursor guifg=#192224 guibg=#F9F9F9 guisp=#F9F9F9 gui=NONE ctermfg=235 ctermbg=15 cterm=NONE
-hi SpellLocal guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi Error guifg=#A1A6A8 guibg=#912C00 guisp=#912C00 gui=NONE ctermfg=248 ctermbg=88 cterm=NONE
-hi PMenu guifg=#f0f0f0 guibg=#33363a guisp=#33363a gui=NONE ctermfg=255 ctermbg=237 cterm=NONE
-hi SpecialKey guifg=#5E6C70 guibg=NONE guisp=NONE gui=italic ctermfg=66 ctermbg=NONE cterm=NONE
-hi Constant guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Tag guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi String guifg=#4adbff guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-hi PMenuThumb guifg=#a5adb9 guibg=#a5adb9 guisp=#a5adb9 gui=NONE ctermfg=103 ctermbg=103 cterm=NONE
-hi MatchParen guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi Repeat guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi SpellBad guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi Directory guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
-hi Structure guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
-hi Macro guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi DiffAdd guifg=NONE guibg=#193224 guisp=#193224 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
-hi TabLine guifg=#a5adb9 guibg=#33363a guisp=#33363a gui=bold ctermfg=103 ctermbg=237 cterm=bold
-hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
+let s:black       = { "gui": "#282A2D", "cterm": "236" }
+let s:red         = { "gui": "#F92672", "cterm": "197" }
+let s:green       = { "gui": "#74FA44", "cterm": "119" }
+let s:yellow      = { "gui": "#FD971F", "cterm": "208" }
+let s:blue        = { "gui": "#3887FF", "cterm": "69"  }
+let s:purple      = { "gui": "#AE81FF", "cterm": "141"  }
+let s:cyan        = { "gui": "#66D9EF", "cterm": "81"  }
+let s:white       = { "gui": "#F0F0F0", "cterm": "255" }
+
+let s:fg          = s:white
+let s:bg          = s:black
+
+let s:comment_fg  = { "gui": "#A5ADB9", "cterm": "145" }
+let s:gutter_bg   = { "gui": "#33363A", "cterm": "59" }
+let s:gutter_fg   = { "gui": "#A5ADB9", "cterm": "145" }
+
+let s:cursor_line = { "gui": "#555A61", "cterm": "59" }
+let s:color_col   = { "gui": "#555A61", "cterm": "59" }
+
+let s:selection   = { "gui": "#7057B9", "cterm": "61" }
+let s:vertsplit   = { "gui": "#7057B9", "cterm": "61" }
+
+
+function! s:h(group, fg, bg, attr)
+  if type(a:fg) == type({})
+    exec "hi " . a:group . " guifg=" . a:fg.gui . " ctermfg=" . a:fg.cterm
+  else
+    exec "hi " . a:group . " guifg=NONE cterm=NONE"
+  endif
+  if type(a:bg) == type({})
+    exec "hi " . a:group . " guibg=" . a:bg.gui . " ctermbg=" . a:bg.cterm
+  else
+    exec "hi " . a:group . " guibg=NONE ctermbg=NONE"
+  endif
+  if a:attr != ""
+    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
+  else
+    exec "hi " . a:group . " gui=NONE cterm=NONE"
+  endif
+endfun
+
+
+" User interface colors {
+call s:h("Normal", s:fg, s:bg, "")
+call s:h("NonText", s:fg, "", "")
+
+call s:h("Cursor", s:bg, s:blue, "")
+call s:h("CursorColumn", "", s:cursor_line, "")
+call s:h("CursorLine", "", s:cursor_line, "")
+
+call s:h("LineNr", s:gutter_fg, s:gutter_bg, "")
+call s:h("CursorLineNr", s:fg, "", "")
+
+call s:h("DiffAdd", s:green, "", "")
+call s:h("DiffChange", s:yellow, "", "")
+call s:h("DiffDelete", s:red, "", "")
+call s:h("DiffText", s:blue, "", "")
+
+call s:h("IncSearch", s:bg, s:yellow, "")
+call s:h("Search", s:bg, s:yellow, "")
+
+call s:h("ErrorMsg", s:fg, "", "")
+call s:h("ModeMsg", s:fg, "", "")
+call s:h("MoreMsg", s:fg, "", "")
+call s:h("WarningMsg", s:red, "", "")
+call s:h("Question", s:purple, "", "")
+
+call s:h("Pmenu", s:bg, s:fg, "")
+call s:h("PmenuSel", s:fg, s:blue, "")
+call s:h("PmenuSbar", "", s:selection, "")
+call s:h("PmenuThumb", "", s:fg, "")
+
+call s:h("SpellBad", s:red, "", "")
+call s:h("SpellCap", s:yellow, "", "")
+call s:h("SpellLocal", s:yellow, "", "")
+call s:h("SpellRare", s:yellow, "", "")
+
+call s:h("StatusLine", s:blue, s:cursor_line, "")
+call s:h("StatusLineNC", s:comment_fg, s:cursor_line, "")
+call s:h("TabLine", s:comment_fg, s:cursor_line, "")
+call s:h("TabLineFill", s:comment_fg, s:cursor_line, "")
+call s:h("TabLineSel", s:fg, s:bg, "")
+
+call s:h("Visual", "", s:selection, "")
+call s:h("VisualNOS", "", s:selection, "")
+
+call s:h("ColorColumn", "", s:color_col, "")
+call s:h("Conceal", s:fg, "", "")
+call s:h("Directory", s:blue, "", "")
+call s:h("VertSplit", s:vertsplit, s:vertsplit, "")
+call s:h("Folded", s:fg, "", "")
+call s:h("FoldColumn", s:fg, "", "")
+call s:h("SignColumn", s:fg, "", "")
+
+call s:h("MatchParen", s:blue, "", "underline")
+call s:h("SpecialKey", s:fg, "", "")
+call s:h("Title", s:green, "", "")
+call s:h("WildMenu", s:fg, "", "")
+" }
+
+
+" Syntax colors {
+call s:h("Comment", s:comment_fg, "", "")
+call s:h("Constant", s:cyan, "", "")
+call s:h("String", s:green, "", "")
+call s:h("Character", s:green, "", "")
+call s:h("Number", s:yellow, "", "")
+call s:h("Boolean", s:yellow, "", "")
+call s:h("Float", s:yellow, "", "")
+
+call s:h("Identifier", s:red, "", "")
+call s:h("Function", s:blue, "", "")
+call s:h("Statement", s:purple, "", "")
+
+call s:h("Conditional", s:purple, "", "")
+call s:h("Repeat", s:purple, "", "")
+call s:h("Label", s:purple, "", "")
+call s:h("Operator", s:fg, "", "")
+call s:h("Keyword", s:red, "", "")
+call s:h("Exception", s:purple, "", "")
+
+call s:h("PreProc", s:yellow, "", "")
+call s:h("Include", s:blue, "", "")
+call s:h("Define", s:purple, "", "")
+call s:h("Macro", s:purple, "", "")
+call s:h("PreCondit", s:yellow, "", "")
+
+call s:h("Type", s:yellow, "", "")
+call s:h("StorageClass", s:yellow, "", "")
+call s:h("Structure", s:yellow, "", "")
+call s:h("Typedef", s:yellow, "", "")
+
+call s:h("Special", s:blue, "", "")
+call s:h("SpecialChar", s:fg, "", "")
+call s:h("Tag", s:fg, "", "")
+call s:h("Delimiter", s:fg, "", "")
+call s:h("SpecialComment", s:fg, "", "")
+call s:h("Debug", s:fg, "", "")
+call s:h("Underlined", s:fg, "", "")
+call s:h("Ignore", s:fg, "", "")
+call s:h("Error", s:red, s:gutter_bg, "")
+call s:h("Todo", s:purple, "", "")
+" }
+
+
+" Plugins {
+" GitGutter
+call s:h("GitGutterAdd", s:green, s:gutter_bg, "")
+call s:h("GitGutterDelete", s:red, s:gutter_bg, "")
+call s:h("GitGutterChange", s:yellow, s:gutter_bg, "")
+call s:h("GitGutterChangeDelete", s:red, s:gutter_bg, "")
+" Fugitive
+call s:h("diffAdded", s:green, "", "")
+call s:h("diffRemoved", s:red, "", "")
+" }
+
+
+" Git {
+call s:h("gitcommitComment", s:comment_fg, "", "")
+call s:h("gitcommitUnmerged", s:red, "", "")
+call s:h("gitcommitOnBranch", s:fg, "", "")
+call s:h("gitcommitBranch", s:purple, "", "")
+call s:h("gitcommitDiscardedType", s:red, "", "")
+call s:h("gitcommitSelectedType", s:green, "", "")
+call s:h("gitcommitHeader", s:fg, "", "")
+call s:h("gitcommitUntrackedFile", s:cyan, "", "")
+call s:h("gitcommitDiscardedFile", s:red, "", "")
+call s:h("gitcommitSelectedFile", s:green, "", "")
+call s:h("gitcommitUnmergedFile", s:yellow, "", "")
+call s:h("gitcommitFile", s:fg, "", "")
+hi link gitcommitNoBranch gitcommitBranch
+hi link gitcommitUntracked gitcommitComment
+hi link gitcommitDiscarded gitcommitComment
+hi link gitcommitSelected gitcommitComment
+hi link gitcommitDiscardedArrow gitcommitDiscardedFile
+hi link gitcommitSelectedArrow gitcommitSelectedFile
+hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+" }
+
+" Fix colors in neovim terminal buffers {
+  if has('nvim')
+    let g:terminal_color_0 = s:black.gui
+    let g:terminal_color_1 = s:red.gui
+    let g:terminal_color_2 = s:green.gui
+    let g:terminal_color_3 = s:yellow.gui
+    let g:terminal_color_4 = s:blue.gui
+    let g:terminal_color_5 = s:purple.gui
+    let g:terminal_color_6 = s:cyan.gui
+    let g:terminal_color_7 = s:white.gui
+    let g:terminal_color_8 = s:black.gui
+    let g:terminal_color_9 = s:red.gui
+    let g:terminal_color_10 = s:green.gui
+    let g:terminal_color_11 = s:yellow.gui
+    let g:terminal_color_12 = s:blue.gui
+    let g:terminal_color_13 = s:purple.gui
+    let g:terminal_color_14 = s:cyan.gui
+    let g:terminal_color_15 = s:white.gui
+    let g:terminal_color_background = s:bg.gui
+    let g:terminal_color_foreground = s:fg.gui
+  endif
+" }

@@ -15,7 +15,7 @@ let colors_name="dank-neon"
 
 let s:black       = { "gui": "#282A2D", "cterm": "236" }
 let s:red         = { "gui": "#F92672", "cterm": "197" }
-let s:green       = { "gui": "#74FA44", "cterm": "119" }
+let s:green       = { "gui": "#77dcb8", "cterm": "119" }
 let s:yellow      = { "gui": "#FD971F", "cterm": "208" }
 let s:blue        = { "gui": "#3887FF", "cterm": "69"  }
 let s:purple      = { "gui": "#AE81FF", "cterm": "141"  }

@@ -25,4 +25,4 @@ You can refer to following screenshots if you are not sure if it was installed c
 
 | Correct | Wrong |
 |:-------:|:-----:|
-| [Correct]('/assets/correct.png') | [Wrong]('/assets/incorrect.png') |
+| ![Correct](/assets/correct.png) | ![Wrong](/assets/incorrect.png) |

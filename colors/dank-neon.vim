@@ -40,7 +40,7 @@ hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#eff0f6 guibg=#1c3359 gui=
 hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#eff0f6 guibg=#204a87 gui=bold
 hi ErrorMsg ctermfg=231 ctermbg=203 cterm=NONE guifg=#f8f8f0 guibg=#ff476e gui=NONE
 hi Error ctermfg=231 ctermbg=203 cterm=NONE guibg=NONE guifg=#ff476e gui=NONE
-hi WarningMsg ctermfg=16 ctermbg=226 cterm=NONE guifg=#f8f8f0 guibg=#ffca7a gui=NONE
+hi WarningMsg ctermfg=16 ctermbg=226 cterm=NONE guifg=#191b2a guibg=#ffca7a gui=NONE
 hi Warning ctermfg=226 ctermbg=NONE cterm=NONE guibg=NONE guifg=#ffca7a gui=NONE
 hi Float ctermfg=219 ctermbg=NONE cterm=NONE guifg=#f1b3f1 guibg=NONE gui=NONE
 hi Function ctermfg=203 ctermbg=NONE cterm=NONE guifg=#ff476e guibg=NONE gui=NONE
